@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "2GF Innovation Systems",
+    "base_url": "https://2gfinnovationsystems.pt/",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "147",
+    "logo_height": "50",
+    "logo_text": "2GF Innovation Systems"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 100,
+    "blog_folder": "blog"
+  },
+
+  "call_to_action": {
+    "title": "Our Works",
+    "description": "In the vast universe of the internet, each blog is a unique window into the author's soul. Share your ideas, dreams and passions, and allow your creativity to light up the world, inspiring everyone who crosses your path.",
+    "button": {
+      "label": "See our Blog",
+      "link": "/blog"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  },
+
+  "params": {
+    "footer_description": "There is a driving force more powerful than steam, electricity and atomic energy: will.",
+    "location": "Centro de Inovação Empresarial da Covilhã - R. António Augusto de Aguiar, 6200-053 Covilhã",
+    "email": "hello@2gfinnovationsystems.pt",
+    "phone": "+351 969 059 898",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2024 per [2GF Innovation Systems](https://2gfinnovationsystems.pt/). </br> All my rights reserved."
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "pinwheel astro"
+  }
+}

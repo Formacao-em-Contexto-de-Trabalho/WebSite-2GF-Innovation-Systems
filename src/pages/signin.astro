@@ -1,0 +1,83 @@
+---
+import Base from "@/layouts/Base.astro";
+import SigninSlider from "@/layouts/function-components/SigninSlider.jsx";
+---
+
+<Base>
+  <section>
+    <div class="container max-w-full">
+      <div class="row">
+        <div class="min-h-[980px] bg-white py-10 lg:col-6 lg:py-[114px]">
+          <div class="mx-auto w-full max-w-[480px]">
+            <div class="image-text-container">
+              <img class="mb-8" src="/images/2GF.png" alt="Logo da 2GF Innovation Systems" />
+              <span>2GF Innovation Systems</span>
+            </div> <br>
+            <h1 class="mb-4">To enter</h1>
+            <div class="signin-options mt-10">
+              <a class="btn btn-outline-white block w-full text-dark flex items-center justify-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google mr-2" viewBox="0 0 16 16">
+                  <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                </svg>
+                Sign in to Google
+              </a>
+            </div>
+            <div
+              class="relative my-8 text-center after:absolute after:left-0 after:top-1/2 after:z-[0] after:w-full after:border-b after:border-border after:content-['']"
+            >
+              <span class="relative z-[1] inline-block bg-white px-2"
+                >Or login with email</span
+              >
+            </div>
+
+            <form action="#">
+              <div class="form-group">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                />
+              </div>
+              <div class="form-group mt-4">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Your password"
+                />
+              </div>
+              <input
+                class="btn btn-primary mt-10 block w-full"
+                type="submit"
+                value="To enter"
+              />
+              <p class="mt-6 text-center">
+                It cannot <a class="text-dark">log in</a>?
+                <a class="text-dark" href="/signup">Sign up</a> to create account.
+              </p>
+            </form>
+          </div>
+        </div>
+        <SigninSlider
+          client:load
+          title=""
+        />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .image-text-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-text-container img {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+</style>
